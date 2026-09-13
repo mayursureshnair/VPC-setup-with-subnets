@@ -317,14 +317,6 @@ ssh -i "ec2-key.pem" ec2-user@32.196.161.190
 
 ---
 
-## Author
-
-**Mayur Suresh Nair**
-- AWS Region: us-east-1 (N. Virginia)
-- Project Date: September 2026
-
----
-
 ## References
 
 - [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
