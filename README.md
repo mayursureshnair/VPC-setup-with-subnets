@@ -22,7 +22,6 @@
 - [Traffic Flow](#traffic-flow)
 - [Cleanup](#cleanup)
 - [Proof of Working Setup](#proof-of-working-setup)
-- [Author](#author)
 - [References](#references)
 
 ---
