@@ -1,0 +1,15 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+
+# Keys (NEVER commit .pem files)
+*.pem
+*.key
+
+# Terraform state (if used later)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Environment variables
+.env
