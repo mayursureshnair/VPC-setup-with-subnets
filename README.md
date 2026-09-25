@@ -41,17 +41,17 @@ This mirrors real-world production setups where your web-facing layer is public,
 
 ```
                          +--------------------------------------------------+
-                         |            AWS Region (us-east-1)                 |
-                         |                                                    |
+                         |            AWS Region (us-east-1)                |
+                         |                                                  |
                          |   +------------------------------------------+   |
                          |   |          My-VPC  (10.0.0.0/16)           |   |
-                         |   |                                           |   |
+                         |   |                                          |   |
   Internet  ---------->  IGW |  +--------------+  +----------------+    |   |
                          |   |  | Public Subnet|  | Private Subnet |    |   |
-                         |   |  | 10.0.1.0/24  |  | 10.0.2.0/24   |    |   |
+                         |   |  | 10.0.1.0/24  |  | 10.0.2.0/24    |    |   |
                          |   |  |              |  |                |    |   |
                          |   |  | +----------+ |  | +------------+ |    |   |
-                         |   |  | | Web-EC2  |-+--+->| App-EC2   | |    |   |
+                         |   |  | | Web-EC2  |----->| App-EC2    | |    |   |
                          |   |  | | (Public) | |  | | (Private)  | |    |   |
                          |   |  | +----------+ |  | +------------+ |    |   |
                          |   |  | Public-RT    |  | Private-RT     |    |   |
@@ -324,5 +324,3 @@ ssh -i "ec2-key.pem" ec2-user@32.196.161.190
 - [AWS Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
 
 ---
-
-> If this project helped you, please give it a star on GitHub!
